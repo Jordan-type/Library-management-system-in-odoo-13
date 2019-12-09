@@ -1,5 +1,7 @@
-###-- Object Relational Model (ORM) --
-#--- Library Mangement System ---
+Object Relational Model (ORM)
+===================================
+Library Mangement System
+===================================
 
 Library 
 --------------------                       
