@@ -9,7 +9,7 @@ Library             |
 -location           |   
 -librarian id       |
 
-Librarian           | Books Database      |
+Librarian           | Books               |
 --------------------| --------------------|
 -Name               | -bookTitle          |
 -Librarian id       | -bookAuthor         |
