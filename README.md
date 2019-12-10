@@ -7,43 +7,25 @@ Library             |
 -location           |   
 -librarian id       |
 
-Librarian           |
---------------------|
--Name               |
--Librarian id       |
---------------------|
-+issueStatus()      |
-+searchBook()       |
+Librarian           | Books Database      |
+--------------------| --------------------|
+-Name               | -bookTitle          |
+-Librarian id       | -bookAuthor         |
+--------------------| -bookId             |
++issueStatus()      | --------------------|
++searchBook()       | +update()           |
 +verifyMember()     |
 +issueBook()        |
 +payment()          |
 
-
-Books Database      |
---------------------|
--bookTitle          |
--bookAuthor         |
--bookId             |
---------------------|
-+update()           |
-
-Patron              |
---------------------|
--details            |
--patronId           |
---------------------|
-+search()           |
-+request()          |
-+payFine()          |
-
-Patron Record       |
---------------------|
--patronId           |
--type               |
--dateOfMembership   |
--noBookIssued       |
--maxBookLimit       |
--name               |
+Patron Record       | Vendor              | Patron              |
+--------------------| --------------------| --------------------|
+-patronId           | -bookDetails        | -details            |
+-type               | --------------------| -patronId           |
+-dateOfMembership   | +search()           | --------------------|
+-noBookIssued       | +supplyBooks()      | +search()           |
+-maxBookLimit       | +paymentDetails()   | +request()          |
+-name               |                     | +payFine()          |
 -address            |
 -phoneNo            |
 -finesOwed          |
@@ -51,12 +33,11 @@ Patron Record       |
 +retrieveMember()    |
 +increaseBookIssued()|
 +decreaseBookIssued()|
-+payFine()          |
++payFine()           |
 
-Vendor              |
---------------------|
--bookDetails        |
---------------------|
-+search()           |
-+supplyBooks()      |
-+paymentDetails()   |
+
+
+
+
+
+
