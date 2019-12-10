@@ -1,5 +1,5 @@
-#Library Management System in _Odoo 13_ 
-##*Object Relational Model (ORM)* 
+#Library Management System in Odoo 13 
+##Object Relational Model (ORM)
 
 
 Library             |   
